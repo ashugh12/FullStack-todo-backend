@@ -5,7 +5,7 @@ const routes = require('./routes/ToDoRoutes')
 const cors= require("cors")
 const app = express();
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://your-netlify-app.netlify.app"); // Replace with your frontend origin
+  res.header("Access-Control-Allow-Origin", "https://apnatodoapp.netlify.app/"); // Replace with your frontend origin
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
